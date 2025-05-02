@@ -1,34 +1,34 @@
 [
     {
-        "photo": "/photos/landscape2.jpg",
+        "photo": "photos/landscape2.jpg",
         "credit": "San Bernardino Sun photo",
         "alt": "",
         "status": "Southern California",
         "description": "Southern California is one of the largest warehousing and logistics regions in the US. Fed by the Port of Los Angeles, 40% of the nation's imported goods travel through the freeways, freight rail, and 1.3 million square feet of warehouses in the region."
     },
     {
-        "photo": "/photos/pola.jpg",
+        "photo": "photos/pola.jpg",
         "credit": "CLUI photo",
         "alt": "",
         "status": "Port of Los Angeles",
         "description": "Months before you placed your order, your item arrived in a shipping container at the Port of Los Angeles. That shipping container was transfered to the back of a truck and transported to a fulfillment center with the most efficient location."
     },
     {
-        "photo": "/photos/psp1.jpg",
+        "photo": "photos/psp1.jpg",
         "credit": "CLUI photo",
         "alt": "",
         "status": "PSP1",
         "description": "Your item arrived at PSP1, a fulfillment center in Beaumont, CA. Here, the truck was unloaded and items were stored on shelves. Once you placed your order, it was picked, packed, and loaded onto another truck."
     },
     {
-        "photo": "/photos/ont5.jpg",
+        "photo": "photos/ont5.jpg",
         "credit": "CLUI photo",
         "alt": "",
         "status": "ONT5",
         "description": "Your package arrived at ONT5, an outbound sortation center which collects and organizes outgoing packages to get them to their final destination more efficiently. Your package was unloaded, sorted, and loaded onto another truck heading to the delivery station nearest to you."
     },
     {
-        "photo": "/photos/dlx9.jpg",
+        "photo": "photos/dlx9.jpg",
         "credit": "CLUI photo",
         "alt": "",
         "status": "DLX9",
@@ -42,7 +42,7 @@
         "description": "Your package was delivered to your doorstep in Culver City."
     },
     {
-        "photo": "/photos/going-with-the-flow.jpg",
+        "photo": "photos/going-with-the-flow.jpg",
         "credit": "CLUI photo",
         "alt": "",
         "status": "A Portrait of Amazon Fulfillment in the Southland",
