@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track your package</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+    <!-- howler.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.js"
+     integrity="sha512-7Zgn4mmO9yGGB1j9yP0mZvUPWBVg0fCcUMsYUV6FX7XIKQfb/dhGxsKh794YAzXH2F/+Z3eJL4mrTilrT2ZeFQ==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js" type="module" defer></script>
+</head>
+<body class="flex-page">
+    <div>
+        <header class="header">
+            <div class="wrapper">
+                <h1 class="page-title"><a href="index.html">Home</a></h1>
+            </div>
+        </header>
+        <main class="wrapper main-content">
+            <div class="sidebar">
+                <img id="photo" src="/photos/landscape2.jpg" alt="">
+                <p id="photo-credit">San Bernardino Sun photo</p>
+                <h2 id="status">Southern California</h2>
+                <p id="description">Southern California is one of the largest warehousing and logistics regions in the US. Fed by the Port of Los Angeles, 40% of the nation's imported goods travel through the freeways, freight rail, and 1.3 million square feet of warehouses in the region.</p>
+                <button id="btn" class="btn">Next</button>
+                <button id="restart">Start over</button>
+            </div>
+            <div id="map"></div>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="wrapper">
+            <p>
+                Alina Verduzco <br>
+                INST 630 <br>
+                Final Project <br>
+                Prof. Alex Leitch <br>
+                May 13, 2025
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
