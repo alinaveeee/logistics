@@ -11,28 +11,28 @@
         "credit": "CLUI photo",
         "alt": "",
         "status": "Port of Los Angeles",
-        "description": "Months before you placed your order, your item arrived in a shipping container at the Port of Los Angeles. That shipping container was transfered to the back of a truck and transported to a fulfillment center with the most efficient location."
+        "description": "Months before you placed your order, your item arrived in a shipping container at the Port of Los Angeles. It was transfered from a cargo ship to a semi-truck and transported to a strategically located fulfillment center."
     },
     {
         "photo": "photos/psp1.jpg",
         "credit": "CLUI photo",
         "alt": "",
         "status": "PSP1",
-        "description": "Your item arrived at PSP1, a fulfillment center in Beaumont, CA. Here, the truck was unloaded and items were stored on shelves. Once you placed your order, it was picked, packed, and loaded onto another truck."
+        "description": "PSP1 is a fulfillment center in Beaumont. Here, items were unloaded from the semi-truck and stored on shelves. Once you placed your order, your item was picked, packed, and loaded onto another semi-truck."
     },
     {
         "photo": "photos/ont5.jpg",
         "credit": "CLUI photo",
         "alt": "",
         "status": "ONT5",
-        "description": "Your package arrived at ONT5, an outbound sortation center which collects and organizes outgoing packages to get them to their final destination more efficiently. Your package was unloaded, sorted, and loaded onto another truck heading to the delivery station nearest to you."
+        "description": "Your package arrived at ONT5, an outbound sortation center in San Bernardino which collects and organizes outgoing packages to get them to their final destination more efficiently. Your package was unloaded, sorted, and loaded onto another semi-truck heading to the delivery station nearest to you."
     },
     {
         "photo": "photos/dlx9.jpg",
         "credit": "CLUI photo",
         "alt": "",
         "status": "DLX9",
-        "description": "Your package arrived at DLX9, a delivery station that serves the Culver City area. Here, your package was placed in a delivery truck for the final mile of its journey."
+        "description": "DLX9 is a delivery station that serves the Culver City area. Here, your package was placed in a delivery truck for the final mile of its journey."
     },
     {
         "photo": "",
