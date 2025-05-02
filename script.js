@@ -27,19 +27,19 @@ async function mainEvent() {
     }).addTo(map);
 
     // geojson layers
-    const warehousesLayerData = await fetch(`/data/warehouse-city.geojson`);
+    const warehousesLayerData = await fetch(`data/warehouse-city.geojson`);
     const warehousesLayer = await warehousesLayerData.json();
 
-    const polaLayerData = await fetch(`/data/pola.geojson`);
+    const polaLayerData = await fetch(`data/pola.geojson`);
     const polaLayer = await polaLayerData.json();
 
-    const psp1LayerData = await fetch(`/data/psp1.geojson`);
+    const psp1LayerData = await fetch(`data/psp1.geojson`);
     const psp1Layer = await psp1LayerData.json();
 
-    const ont5LayerData = await fetch(`/data/ont5.geojson`);
+    const ont5LayerData = await fetch(`data/ont5.geojson`);
     const ont5Layer = await ont5LayerData.json();
 
-    const dlx9LayerData = await fetch(`/data/dlx9.geojson`);
+    const dlx9LayerData = await fetch(`data/dlx9.geojson`);
     const dlx9Layer = await dlx9LayerData.json();
 
     // base layer + styling
@@ -83,7 +83,7 @@ async function mainEvent() {
     }).addTo(map);
 
     // text content + photos
-    const contentData = await fetch(`/data/content.json`);
+    const contentData = await fetch(`data/content.json`);
     const content = await contentData.json();
     
     const introduction = content[0];
@@ -96,22 +96,22 @@ async function mainEvent() {
 
     // sound!
     const oceanSound = new Howl({
-        src: ['./audio/ocean.mp3'],
+        src: ['audio/ocean.mp3'],
         loop: true
     });
 
     const trainSound = new Howl({
-        src: ['./audio/train.mp3'],
+        src: ['audio/train.mp3'],
         loop: true
     });
 
     const trafficSound = new Howl({
-        src: ['./audio/traffic.mp3'],
+        src: ['audio/traffic.mp3'],
         loop: true
     });
 
     const airportSound = new Howl({
-        src: ['./audio/airport.mp3'],
+        src: ['audio/airport.mp3'],
         loop: true
     });
 
