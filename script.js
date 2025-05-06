@@ -21,7 +21,7 @@ async function mainEvent() {
 
     let map = L.map('map').setView(soCal, 9);
 
-    let maptiler = L.tileLayer('https://api.maptiler.com/maps/satellite/{z}/{x}/{y}.jpg?key=rpac02Coa75Y9XMRctEM', {
+    L.tileLayer('https://api.maptiler.com/maps/satellite/{z}/{x}/{y}.jpg?key=rpac02Coa75Y9XMRctEM', {
     maxZoom: 19,
     attribution: '&copy; <a href="https://www.maptiler.com/copyright/" target="_blank">MapTiler</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>'
     }).addTo(map);
@@ -42,32 +42,39 @@ async function mainEvent() {
     const dlx9LayerData = await fetch(`data/dlx9.geojson`);
     const dlx9Layer = await dlx9LayerData.json();
 
-    // base layer + styling
-    const warehousesStyle = {
-        "smoothFactor": 0,
-        "color": "rgb(255, 120, 0)",
-        "weight": 1,
-        // "stroke": false,
-        // "fill": true,
-        "fillColor": "rgb(255, 120, 0)",
-        "opacity": 0.8
-    };
+    const freewaysLayerData = await fetch(`data/freeways.geojson`);
+    const freewaysLayer = await freewaysLayerData.json();
 
     const warehouseCity = L.geoJSON(warehousesLayer, {
-        style: warehousesStyle,
+        style: {
+            "smoothFactor": 0,
+            "color": "rgb(255, 120, 0)",
+            "weight": 1,
+            // "stroke": false,
+            // "fill": true,
+            "fillColor": "rgb(255, 120, 0)",
+            "opacity": 0.8
+        },
         attribution: '&copy; <a href="https://radicalresearch.shinyapps.io/WarehouseCITY/" target="_blank">Warehouse CITY</a>'
     }).addTo(map);
 
-    // featured layer styling
-    const featuredStyle = {
-        "smoothFactor": 0,
-        "color": "rgb(0, 128, 255)",
-        "weight": 1
-    }
-
     const featured = L.geoJSON([polaLayer, psp1Layer, ont5Layer, dlx9Layer], {
-        style: featuredStyle
+        style: {
+            "smoothFactor": 0,
+            "color": "rgb(0, 128, 255)",
+            "weight": 1
+        }
     }).addTo(map);
+
+    const freeways = L.geoJSON(freewaysLayer, {
+        style: {
+            "smoothFactor": 0,
+            "color": "rgb(255, 120, 0)",
+            "weight": 1,
+            "opacity": 0.4
+        },
+        attribution: '&copy; Caltrans (CC-BY)'
+    });
 
     const openrailwaymap = new L.TileLayer('http://{s}.tiles.openrailwaymap.org/standard/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://www.openrailwaymap.org/">OpenRailwayMap</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">(CC-BY-SA)</a> and OpenStreetMap',
@@ -78,8 +85,9 @@ async function mainEvent() {
 
     L.control.layers(null, {
         "Featured": featured,
-        "Warehouses": warehouseCity,
-        "Rail": openrailwaymap
+        "Freeways": freeways,
+        "Rail": openrailwaymap,
+        "Warehouses": warehouseCity
     }).addTo(map);
 
     // text content + photos
