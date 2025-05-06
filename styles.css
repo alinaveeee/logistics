@@ -1,12 +1,17 @@
 :root {
     --color-blue-dark: rgba(19, 25, 33, 1);
-    --color-blue-med: rgba(36, 47, 62, 1);
+    /* --color-blue-med: rgba(36, 47, 62, 1);  */
     --color-blue-light: rgba(55, 70, 91, 1);
+    --color-blue-text: rgba(34, 97, 161, 1);
+
     --color-yellow: rgba(255, 217, 22, 1);
     --color-yellow-2: rgba(255, 206, 21, 1);
-    --color-orange: rgba(243, 168, 70, 1);
+    /* --color-orange: rgba(243, 168, 70, 1); */
+
     --color-gray: rgba(226, 230, 230, 1);
     --color-gray-text: rgba(87, 87, 87, 1);
+
+    --color-green: rgba(10, 126, 97, 1);
 }
 
 html {
@@ -67,6 +72,29 @@ a {
     font-weight: bold;
 }
 
+.false-link {
+    color: var(--color-blue-text);
+}
+
+.false-link:hover {
+    cursor: not-allowed;
+}
+
+.space-between {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin: inherit;
+}
+
+.green {
+    color: var(--color-green)
+}
+
+.light-blue {
+    background-color: var(--color-blue-light);
+}
+
 .main-content {
     margin-top: 1rem;
     
@@ -86,10 +114,6 @@ a {
 .card {
     background-color: white;
     padding: 1rem;
-}
-
-.card .btn {
-    max-width: 358px;
 }
 
 .sidebar {
@@ -128,7 +152,7 @@ a {
     line-height: 1rem;
     font-size: 1rem;
 
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 3rem;
     width: 100%;
 }
 
@@ -136,6 +160,10 @@ a {
     background-color: var(--color-yellow-2);
     border: 1px solid var(--color-yellow-2);
     cursor: pointer;
+}
+
+.btn-width-auto {
+    width: fit-content;
 }
 
 #restart {
@@ -157,6 +185,11 @@ a {
 #restart:hover {
     cursor: pointer;
     background-color: rgba(246, 250, 250, 1);
+}
+
+hr {
+    border-style: solid;
+    color: rgba(221, 221, 221, 1);
 }
 
 .mobile-hr {
@@ -187,5 +220,9 @@ a {
 
     .mobile-hr {
         display: block;
+    }
+
+    .btn-width-auto {
+        width: 100%;
     }
 }
