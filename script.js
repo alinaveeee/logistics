@@ -193,7 +193,7 @@ async function mainEvent() {
 
     function cluiView() {
         map.flyTo(soCal, 9);
-        photo.setAttribute("src", conclusion.photo)
+        photo.setAttribute("src", conclusion.photo);
         photoCredit.textContent = conclusion.credit;
         status.textContent = conclusion.status;
         description.textContent = conclusion.description;
@@ -206,7 +206,7 @@ async function mainEvent() {
 
     function socalView() {
         map.flyTo(soCal, 9);
-        photo.setAttribute("src", introduction.photo)
+        photo.setAttribute("src", introduction.photo);
         photoCredit.textContent = introduction.credit;
         status.textContent = introduction.status;
         description.textContent = introduction.description;
