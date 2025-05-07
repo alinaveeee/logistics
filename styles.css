@@ -1,14 +1,14 @@
 :root {
-    --color-blue-dark: rgba(19, 25, 33, 1);
-    /* --color-blue-med: rgba(36, 47, 62, 1);  */
-    --color-blue-light: rgba(55, 70, 91, 1);
+    --color-blue-dark: rgba(19, 25, 33, 1); /* third block of footer */
+    --color-blue-med: rgba(36, 47, 62, 1); /* second block of footer */
+    --color-blue-light: rgba(55, 70, 91, 1); /* first block of footer */
     --color-blue-text: rgba(34, 97, 161, 1);
 
     --color-yellow: rgba(255, 217, 22, 1);
     --color-yellow-2: rgba(255, 206, 21, 1);
     /* --color-orange: rgba(243, 168, 70, 1); */
 
-    --color-gray: rgba(226, 230, 230, 1);
+    --color-gray: rgba(248, 248, 248, 1);
     --color-gray-text: rgba(87, 87, 87, 1);
 
     --color-green: rgba(10, 126, 97, 1);
@@ -61,6 +61,7 @@ a {
 .footer {
     background-color: var(--color-blue-dark);
     color: white;
+    padding: 1rem 0;
 }
 
 .page-title {
@@ -113,6 +114,11 @@ a {
 
 .card {
     background-color: white;
+    padding: 1rem 2rem;
+}
+
+.item-card {
+    background-color: var(--color-gray);
     padding: 1rem;
 }
 
