@@ -91,6 +91,14 @@ a {
     margin: 0.25rem;
 }
 
+.row {
+    display: flex;
+    align-items: top;
+    flex-flow: row;
+    gap: 1rem;
+    margin: 0 0 1rem 0;
+}
+
 .row-wrap {
     display: flex;
     flex-flow: row wrap;
@@ -136,6 +144,18 @@ a {
     
     padding: 1rem;
     margin: 0.5rem 0;
+    max-width: 400px;
+}
+
+.item-card img {
+    max-height: 100px;
+}
+
+.item-card p {
+    margin: 0;
+}
+
+.order-summary {
     max-width: 400px;
 }
 
