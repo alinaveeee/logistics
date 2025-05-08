@@ -6,7 +6,6 @@
 
     --color-yellow: rgba(255, 217, 22, 1);
     --color-yellow-2: rgba(255, 206, 21, 1);
-    /* --color-orange: rgba(243, 168, 70, 1); */
 
     --color-gray: rgba(248, 248, 248, 1);
     --color-gray-text: rgba(87, 87, 87, 1);
@@ -83,9 +82,23 @@ a {
 
 .space-between {
     display: flex;
-    flex-flow: row;
+    flex-direction: row;
     justify-content: space-between;
     margin: inherit;
+}
+
+.summary-li {
+    margin: 0.25rem;
+}
+
+.row-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+}
+
+.align-center {
+    align-items: center;
 }
 
 .green {
@@ -106,6 +119,7 @@ a {
 
 .card-column {
     flex-grow: 1;
+    /* max-width: 794px; */
     
     display: flex;
     flex-direction: column;
@@ -119,7 +133,10 @@ a {
 
 .item-card {
     background-color: var(--color-gray);
+    
     padding: 1rem;
+    margin: 0.5rem 0;
+    max-width: 400px;
 }
 
 .sidebar {
