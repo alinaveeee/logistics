@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
-    --color-blue-dark: rgba(19, 25, 33, 1); /* third block of footer */
-    --color-blue-med: rgba(36, 47, 62, 1); /* second block of footer */
-    --color-blue-light: rgba(55, 70, 91, 1); /* first block of footer */
+    --color-blue-dark: rgba(19, 25, 33, 1);
+    --color-blue-med: rgba(36, 47, 62, 1);
+    --color-blue-light: rgba(55, 70, 91, 1);
     --color-blue-text: rgba(34, 97, 161, 1);
 
     --color-yellow: rgba(255, 217, 22, 1);
@@ -24,7 +26,7 @@ html {
 
 body {
 	margin: 0;
-	font-family: sans-serif;
+	font-family: 'Noto Sans', sans-serif;
 	line-height: 1.5;
 	min-height: 100vh;
     background-color: var(--color-gray);
@@ -54,13 +56,38 @@ a {
 .header {
     background-color: var(--color-blue-dark);
     color: white;
-    padding: 2rem 0;
+    padding: 0.5rem 0;
 }
 
 .footer {
-    background-color: var(--color-blue-dark);
     color: white;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer-1 {
+    background-color: var(--color-blue-light);
     padding: 1rem 0;
+}
+
+.footer-1:hover {
+    background-color: rgba(72, 86, 105, 1);
+}
+
+.footer-2 {
+    background-color: var(--color-blue-med);
+    padding: 1rem 0;
+}
+
+.footer-2 a:hover {
+    text-decoration: underline;
+}
+
+.footer-3 {
+    background-color: var(--color-blue-dark);
+    padding: 1rem 0 3rem 0;
 }
 
 .page-title {
@@ -245,9 +272,17 @@ hr {
 }
 
 @media only screen and (max-width: 1200px) {
-    .header,
-    .footer {
+    .header {
+        padding: 0.5rem 1rem;
+    }
+
+    .footer-1,
+    .footer-2 {
         padding: 1rem;
+    }
+
+    .footer-3 {
+        padding: 1rem 1rem 3rem 1rem
     }
 }
 
