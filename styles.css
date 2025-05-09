@@ -120,7 +120,7 @@ a {
 
 .row {
     display: flex;
-    align-items: top;
+    align-items: start;
     flex-flow: row;
     gap: 1rem;
     margin: 0 0 1rem 0;
